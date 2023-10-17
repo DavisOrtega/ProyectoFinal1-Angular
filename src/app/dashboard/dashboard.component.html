@@ -1,0 +1,62 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p>Inicio</p>
+        <p *ngIf="showFiller">Bienvenido</p>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+        </button>
+    </mat-drawer>
+
+
+
+
+
+    <div class="example-sidenav-content">
+
+        <mat-toolbar color="primary">
+            <button (click)="drawer.toggle()" mat-icon-button class="example-icon"
+                aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>My App</span>
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+                <mat-icon>favorite</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                <mat-icon>share</mat-icon>
+            </button>
+
+        </mat-toolbar>
+
+        <mat-icon style="font-size: 40px; height: 40px; width: 40px;"> account_circle</mat-icon>
+
+        <!-- <mat-card class="example-card">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button color="primary">LIKE</button>
+                <button mat-button color="accent">SHARE</button>
+            </mat-card-actions>
+        </mat-card> -->
+
+
+        <app-forms></app-forms>
+        <app-users></app-users>
+
+
+    </div>
+
+</mat-drawer-container>
