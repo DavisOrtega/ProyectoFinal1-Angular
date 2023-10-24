@@ -1,10 +1,15 @@
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side">
         <p>Inicio</p>
+
         <p *ngIf="showFiller">Bienvenido</p>
+        <p *ngIf="showFiller">Usuarios</p>
+        <p *ngIf="showFiller">Cursos</p>
+
         <button (click)="showFiller = !showFiller" mat-raised-button>
-            Toggle extra text
+            Mostrar
         </button>
+
     </mat-drawer>
 
 
@@ -53,7 +58,7 @@
         </mat-card> -->
 
 
-        <app-forms></app-forms>
+
         <app-users></app-users>
 
 
