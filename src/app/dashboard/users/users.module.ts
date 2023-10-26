@@ -5,7 +5,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
-import { UsersComponent } from './users.component';
+import { UserService } from './../../user.service';
+
 
 
 
@@ -20,6 +21,9 @@ import { UsersComponent } from './users.component';
     ReactiveFormsModule,
     MatTableModule,
     MatInputModule,
+
+
+
 
 
   ]

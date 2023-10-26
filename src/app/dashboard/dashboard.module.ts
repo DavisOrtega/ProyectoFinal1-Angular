@@ -16,11 +16,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 
 
+
 @NgModule({
   declarations: [
     DashboardComponent,
 
     UsersComponent
+
 
   ],
   imports: [
@@ -34,7 +36,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatInputModule,
     ReactiveFormsModule,
     MatDialogModule,
-    MatTableModule
+    MatTableModule,
+
+
+
 
 
 

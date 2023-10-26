@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { UserService } from './user.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -18,8 +21,11 @@ import { DashboardModule } from './dashboard/dashboard.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     DashboardModule,
+    HttpClientModule
+
+
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
